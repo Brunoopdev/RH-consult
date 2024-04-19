@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./rhConsult.js" defer></script>
+    <style>
+        .container{
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .informacoesContainer{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pesquisaContainer{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .retornoContainer{
+            margin-top: 50px;
+        }
+
+        .retornos{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="informacoesContainer">
+            <input class="inputNome"  type="text" placeholder="Nome">
+            <input class="inputNumero"  type="number" placeholder="Número">
+            <input class="inputEmail"  type="email" placeholder="Email">
+        </div>
+        <button class="buttonEnvia"  type="button">envia</button>
+    </div>
+
+    <div class="container">
+        <div class="pesquisaContainer">
+        <span>Pesquisa</span>
+        <label for="pesquisa"></label>
+        <input class="inputPesquisa"  id="pesquisa" type="text">
+        </div>
+        <button class="buttonPesquisa" type="button">pesquisar</button>
+    </div>
+
+    <div class="retornoContainer">
+        <div class="container">
+        <b>Retorno da pesquisa:</b>
+        <div class="retornos">
+            <span class="retornoNome"></span>
+            <span class="retornoNumero"></span>
+            <span class="retornoEmail"></span>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
